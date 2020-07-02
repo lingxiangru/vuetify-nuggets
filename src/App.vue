@@ -1,24 +1,14 @@
 <template>
   <v-app>
-    <!-- <v-navigation-drawer app>
-      </v-navigation-drawer> -->
-    
       <v-app-bar app>
-        top bar
+        掘银网
       </v-app-bar>
-    
-      <!-- Sizes your content based upon application components -->
+
       <v-main>
-    
-        <!-- Provides the application the proper gutter -->
         <v-container>
           <router-view></router-view>
         </v-container>
       </v-main>
-    
-      <v-footer app>
-        footer
-      </v-footer>
   </v-app>
 </template>
 
@@ -27,6 +17,9 @@
     name: 'App',
     data: () => ({
       //
-    })
+    }),
+    mounted() {
+      console.log('初始化')
+    }
   }
 </script>
